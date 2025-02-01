@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>📊 Calorie Counter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🍎 Calorie Tracker</h1>
+        
+        <!-- Форма добавления еды -->
+        <div class="section">
+            <input type="text" id="food-name" placeholder="Название блюда">
+            <input type="number" id="calories" placeholder="Калории">
+            <button onclick="addFood()">Добавить</button>
+        </div>
+
+        <!-- Статистика -->
+        <div class="stats">
+            <div>📅 Сегодня: <span id="today-calories">0</span> ккал</div>
+            <div>🎯 Цель: <span id="goal">2000</span> ккал</div>
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+        </div>
+
+        <!-- История -->
+        <div id="history"></div>
+    </div>
+    <script src="firebase-config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

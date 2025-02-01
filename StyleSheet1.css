@@ -1,0 +1,63 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    background: #f5f5f5;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.stats {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.progress-bar {
+    height: 20px;
+    background: #eee;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+#progress {
+    height: 100%;
+    background: #4CAF50;
+    border-radius: 10px;
+    transition: width 0.3s;
+}
+
+#history {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
